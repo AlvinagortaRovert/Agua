@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="389dp"
+        android:layout_height="688dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="290dp"
+            android:orientation="vertical">
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/rtextView7"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="RECUPERAR CONTRASEÑA"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#080A10"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/aviso"
+                android:layout_width="297dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center|top|center_vertical"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="2dp"
+                app:boxCornerRadiusBottomStart="2dp"
+                app:boxCornerRadiusTopEnd="2dp"
+                app:boxCornerRadiusTopStart="2dp"
+                app:counterMaxLength="100"
+                app:endIconMode="clear_text"
+                app:helperText="ingrese su correo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contenidoemail"
+                    android:layout_width="267dp"
+                    android:layout_height="48dp"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="true"
+                    android:inputType="textWebEmailAddress|text"
+                    android:textSize="10sp">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="263dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/Textviewrecuperar"
+                    android:layout_width="111dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/oval_background"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Siguiente"
+                    android:textColor="#E3D3D3" />
+
+                <Space
+                    android:layout_width="22dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pastel1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

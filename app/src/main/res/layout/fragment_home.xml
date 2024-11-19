@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="#FFEB3B"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView233"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center|center_horizontal"
+                        android:text="Accesos rápido"
+                        android:textAlignment="center"
+                        android:textColor="#0B0A0A"
+                        android:textSize="20sp"
+                        android:textStyle="normal|bold" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="94dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageViewcitas"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/atencion" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageViewatencionmedica"
+                        android:layout_width="79dp"
+                        android:layout_height="67dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/aguaopraciones" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="28dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="164dp"
+                        android:layout_height="41dp"
+                        android:layout_weight="1"
+                        android:text="Citas reclamos y quejas"
+                        android:textColor="#0B0A0A" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="26dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView131"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Operacion y manenimento"
+                        android:textColor="#1C1A1A" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="212dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="29dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageViewvigilancia"
+                        android:layout_width="87dp"
+                        android:layout_height="84dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/canieria" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="46dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageViewsintomas"
+                        android:layout_width="83dp"
+                        android:layout_height="84dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/regitros" />
+
+                    <Space
+                        android:layout_width="47dp"
+                        android:layout_height="65dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="456dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="118dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Vigilancia del agua potable"
+                        android:textColor="#0B0A0A" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gestion de JASS"
+                        android:textColor="#1C1A1A" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

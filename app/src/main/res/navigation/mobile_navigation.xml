@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.agua.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.agua.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.agua.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.agua.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/registro1"
+        android:name="com.example.agua.Registro1"
+        android:label="activity_registro1"
+        tools:layout="@layout/activity_registro1" />
+    <activity
+        android:id="@+id/menuprincipal"
+        android:name="com.example.agua.Menuprincipal"
+        android:label="app_bar_menuprincipal"
+        tools:layout="@layout/app_bar_menuprincipal" />
+    <activity
+        android:id="@+id/recuperaContra"
+        android:name="com.example.agua.RecuperaContra"
+        android:label="RecuperaContra" />
+    <activity
+        android:id="@+id/splashActivity2"
+        android:name="com.example.agua.SplashActivity2"
+        android:label="activity_splash2"
+        tools:layout="@layout/activity_splash2" />
+    <fragment
+        android:id="@+id/salir"
+        android:name="com.example.agua.Salir"
+        android:label="Salir"
+        tools:layout="@layout/activity_salir" />
+    <fragment
+        android:id="@+id/acerca"
+        android:name="com.example.agua.ui.datos.acerca"
+        android:label="Acerca  de nosotros"
+        tools:layout="@layout/fragment_acerca" />
+    <fragment
+        android:id="@+id/datossec"
+        android:name="com.example.agua.ui.datos.datossec"
+        android:label="datossec"
+        tools:layout="@layout/fragment_datossec" />
+    <fragment
+        android:id="@+id/antecedentes"
+        android:name="com.example.agua.ui.datos.Antecedentes"
+        android:label="antecedentes"
+        tools:layout="@layout/fragment_antecedentes" />
+    <fragment
+        android:id="@+id/vigilancia_agua"
+        android:name="com.example.agua.ui.datos.vigilancia_agua"
+        android:label="Monitoreo Agua"
+        tools:layout="@layout/fragment_vigilancia_agua" />
+</navigation>

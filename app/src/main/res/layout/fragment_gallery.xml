@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="390dp"
+        android:layout_height="829dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="69dp">
+
+        <LinearLayout
+            android:layout_width="378dp"
+            android:layout_height="491dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/doccodigo"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese el codigo"
+                    android:inputType="text"
+                    android:minWidth="32dp"
+                    android:minHeight="48dp"
+                    android:textColorHint="#757575" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/docbtnbuscar"
+                    android:layout_width="163dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Buscar"
+                    app:icon="@android:drawable/ic_menu_search" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/docedtnombre"
+                android:layout_width="326dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:hint="Ingrese su nombre"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColorHint="#757575">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/docedtapellido"
+                android:layout_width="326dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:hint="Ingrese su apellidos"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColorHint="#757575">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/docedespecialidad"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:hint="Ingrese especialidad"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColorHint="#757575">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/docedthospital"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:hint="Ingrese de clinica/hospital"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColorHint="#757575">
+
+            </EditText>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/docbtnagregar"
+                    android:layout_width="207dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btnredondo"
+                    android:text="Agregar"
+                    app:icon="@android:drawable/ic_menu_add"
+                    app:layout_constraintBottom_toTopOf="@+id/btnmodificar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    app:layout_constraintVertical_bias="0.138" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <Button
+                    android:id="@+id/docbtnmodificar"
+                    android:layout_width="200dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:background="@drawable/btnredondo"
+                    android:text="modificar"
+                    app:icon="@android:drawable/ic_menu_edit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.507"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    app:layout_constraintVertical_bias="0.244" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <Button
+                    android:id="@+id/docbtneliminar"
+                    android:layout_width="201dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:background="@drawable/btnredondo"
+                    android:drawableLeft="@android:drawable/ic_menu_delete"
+                    android:text="Eliminar"
+                    android:textColor="#E1BEE7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnmodificar"
+                    app:layout_constraintVertical_bias="0.089" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".ui.datos.datossec">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/user2text3"
+                    android:layout_width="315dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#070707"
+                    android:rotationX="0"
+                    android:text="REGISTRAR DATOS DEL JASS"
+                    android:textAlignment="center"
+                    android:textColor="#0027FF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="29dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/jass" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1" />
+
+
+                <TextView
+                    android:id="@+id/user2text2"
+                    android:layout_width="44dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#070707"
+                    android:rotationX="0"
+                    android:text="Fotografia del JASS"
+                    android:textColor="#216EAA"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="220dp"
+                    android:layout_height="72dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="top"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="2dp"
+                    app:boxCornerRadiusBottomStart="2dp"
+                    app:boxCornerRadiusTopEnd="2dp"
+                    app:boxCornerRadiusTopStart="2dp"
+                    app:counterMaxLength="100"
+                    app:endIconMode="clear_text"
+                    app:helperText="Explore sus archivos(*.jpg, *.png, *.bmp)">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/contenido"
+                        android:layout_width="218dp"
+                        android:layout_height="48dp"
+                        android:inputType="text"
+                        android:textSize="10sp"></com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="34dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/user2text9"
+                    android:layout_width="160dp"
+                    android:layout_height="36dp"
+                    android:backgroundTint="#070707"
+                    android:rotationX="0"
+                    android:text="Infraestructura SAP"
+                    android:textColor="#216EAA"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/my_spinner_description"
+                    android:entries="@array/opciones_infraestructura" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/user2textgrado"
+                    android:layout_width="100dp"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#070707"
+                    android:rotationX="0"
+                    android:text="Fecha de Const. o ultina mejora"
+                    android:textColor="#216EAA"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextDate"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center|center_vertical"
+
+
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:editable="false"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="true"
+                    android:hint="Fecha"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:id="@+id/btnFecha"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    android:text="Siguiente" />
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/user2sangre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/oval_background"
+                    android:backgroundTint="#F6F6F6"
+                    android:backgroundTintMode="add"
+                    android:rotationX="0"
+                    android:text="Tipo de captación :"
+                    android:textColor="#216EAA"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner_sangre"
+                    android:layout_width="197dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/my_spinner_description"
+                    android:entries="@array/opciones_captacion" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="44dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/vitext770"
+                    android:layout_width="91dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#070707"
+                    android:rotationX="0"
+                    android:text="Operador :"
+                    android:textColor="#216EAA"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <Space
+                    android:layout_width="19dp"
+                    android:layout_height="33dp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/regPeso"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center|center_vertical"
+
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="true"
+                    android:hint="Ingrese el nombre y apellidos"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"></EditText>
+
+
+                <Space
+                    android:layout_width="63dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="44dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/vitext771"
+                    android:layout_width="89dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#070707"
+                    android:rotationX="0"
+                    android:text="Presidente :"
+                    android:textColor="#216EAA"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <Space
+                    android:layout_width="19dp"
+                    android:layout_height="33dp"
+                    android:layout_weight="1" />
+
+
+                <EditText
+                    android:id="@+id/regtalla"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_weight="1"
+
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="true"
+                    android:hint="Ingrese el nombre y apellidos"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="12sp" />
+
+                <Space
+                    android:layout_width="63dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="234dp"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textview_id"
+                    android:layout_width="111dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ovalrojo"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Guardar"
+                    android:textColor="#E3D3D3" />
+                <!--
+                <Button
+                    android:id="@+id/userbtnnext"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btnredverde"
+                    android:text="Siguiente"
+                    android:textColorHighlight="#F4EAEA"
+                    app:icon="@android:drawable/ic_media_play" />
+-->
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

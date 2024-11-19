@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">Agua</string>
+    <string name="title_activity_menuprincipal">Menuprincipal</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_home">Incio</string>
+    <string name="menu_gallery">Medicos</string>
+    <string name="menu_datos">Registrar datos</string>
+    <string name="nav_Vigilancia">Vigilancia agua potable</string>
+    <string name="menu_slideshow">Gestion de CAJASS</string>
+    <string name="menu_configutacion">Configuracion</string>
+    <string name="menu_reportes">Reportes</string>
+    <string name="menu_SMReport">Reporte de Sintomas</string>
+    <string name="menu_users">Usuarios</string>
+    <string name="menu_atencion">Operacion y mantenimento</string>
+    <string name="menu_antecedentes">Antecedentes del SAP</string>
+    <string name="menu_tatramiento">Citas Reclamos   quejas </string>
+
+    <string name="sintoMolestiFragment">Síntomas y molestias</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="my_spinner_description">Selecciona una opción</string>
+    <string name="title_usuers">Administrar usuarios</string>
+
+    <string name="ant_pat">Patologicos</string>
+    <string name="ant_aler">Alergicos</string>
+    <string name="ant_ope">Operaciones y traumatismos</string>
+    <string name="ant_Hosp">Hospitalizaciones</string>
+    <string name="ant_geni">Genitourinarios</string>
+    <string name="ant_Laboral">Historial Laboral</string>
+    <string name="ant_epi">Epidemologicos</string>
+    <string name="ant_inmu">Inmunizaciones</string>
+    <string name="ant_medi">Uso de Medicamentos</string>
+    <string name="ant_neo">Perinatales</string>
+    <string name="ant_familiar">Historial Familiar</string>
+    <string name="reopta">Reporte de antedentes</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--<string name="title_reportesd">Reporte de Vigilancia</string>  -->
+
+    <string-array name="opciones_spinner">
+        <item>Soltero(a)</item>
+        <item>Casado(a)</item>
+        <item>Viudo(a)</item>
+        <item>Divorciado(a)</item>
+    </string-array>
+
+
+    <string-array name="opciones_spinner2">
+        <item>patologico</item>
+        <item>Genitorinarios</item>
+        <item>Familiar</item>
+        <item>Perinatal</item>
+        <item>Alergico</item>
+        <item>Historial Fam</item>
+        <item>Hist. Laboral</item>
+        <item>inmunizaciones</item>
+        <item>medicamentos</item>
+        <item>Hospitalizaciones</item>
+        <item>Epidemologicos</item>
+    </string-array>
+
+    <string-array name="opciones_reportes">
+        <item>Presion Arterial</item>
+        <item>Trigliceridos</item>
+        <item>Glucosa</item>
+        <item>Colesterol</item>
+        <item>Hemoglobina</item>
+        <item>Frecuencia cardiaca</item>
+    </string-array>
+    <string-array name="opciones_infraestructura">
+        <item>Nuevo</item>
+        <item>Ampliacion</item>
+        <item>Mejoramiento</item>
+        <item>Ampli. y mejora</item>
+
+    </string-array>
+
+    <string-array name="opciones_sangre">
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+    </string-array>
+    <string-array name="opciones_captacion">
+        <item>Ladera</item>
+        <item>Superficial</item>
+        <item>Galeria</item>
+        <item>Pozo</item>
+
+    </string-array>
+    <string-array name="opciones_academico">
+        <item>TITULADO</item>
+        <item>MAGISTER</item>
+        <item>DOCTOR</item>
+    </string-array>
+
+
+    <string-array name="organs_array">
+        <item>DIGESTIVO</item>
+        <item>CABEZA</item>
+        <item>CUELLO</item>
+        <item>URINARIO</item>
+        <item>CARDIO RESPIRATORIO</item>
+        <item>SISTEMA NERVIOSO</item>
+        <item>OSTEOMUSCULAR</item>
+        <item>GENITAL MASCULINO</item>
+        <item>Varios</item>
+    </string-array>
+
+    <string-array name="organs_molestias">
+        <item>FALTA DE APETITO</item>
+        <item>EXCESO DE APETITO</item>
+        <item>DOLOR AL TRAGAR</item>
+        <item>DOLOR EN LA BOCA DEL ESTOMAGO</item>
+        <item>DOLOR EN ABDOMEN</item>
+        <item>DOLOR EN TODO EL VIENTRE</item>
+        <item>DOLOR QUE MEJORA AL COMER</item>
+        <item>DOLOR QUE AUMENTA AL COMER</item>
+        <item>INFALMACION DEL ABDOMEN</item>
+        <item>MALA DIGESTION</item>
+        <item>NAUSEAS</item>
+        <item>VOMITO CON SANGRES</item>
+        <item>GAS EXCESIVO</item>
+        <item>ERUCTOS</item>
+        <item>DIARREA</item>
+        <item>DIARREA CON MOCO</item>
+        <item>DIARREA CON SANGRES</item>
+        <item>DIARREA CON DOLOR</item>
+        <item>EVACUACION COLOR NEGRO</item>
+        <item>COLICOS</item>
+        <item>ESTREÑIMIENTOS</item>
+        <item>COMEZON EN EL ANO</item>
+        <item>HEMORROIDES</item>
+    </string-array>
+</resources>

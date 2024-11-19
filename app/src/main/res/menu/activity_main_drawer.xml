@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/datossec"
+            android:icon="@drawable/canieria"
+            android:title="@string/menu_datos" />
+
+        <item
+            android:id="@+id/vigilancia_agua"
+            android:icon="@drawable/termometro"
+            android:title="@string/nav_Vigilancia" />
+        <item
+            android:id="@+id/antecedentes"
+            android:icon="@drawable/antedecteas"
+            android:title="@string/menu_antecedentes" />
+        <item
+            android:id="@+id/atencionMedicaFragment"
+            android:icon="@drawable/gestion"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/sintoMolestiFragment"
+            android:icon="@drawable/atencion"
+            android:tint="@android:color/white"
+            android:title="@string/menu_tatramiento" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/reportes"
+            android:tint="@null"
+            android:title="@string/menu_reportes" />
+
+        <item
+            android:id="@+id/nav_usuarios"
+            android:icon="@drawable/usuaio"
+            android:title="@string/menu_users" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/regitros"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/acerca"
+            android:icon="@drawable/usuarios"
+            android:title="Acerca de nosotros" />
+
+        <item
+            android:id="@+id/salir"
+            android:icon="@android:drawable/ic_menu_close_clear_cancel"
+            android:title="Cerrar sesión" />
+    </group>
+</menu>

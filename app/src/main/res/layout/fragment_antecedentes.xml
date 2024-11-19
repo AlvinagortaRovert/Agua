@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.datos.Antecedentes">
+
+    <LinearLayout
+        android:layout_width="389dp"
+        android:layout_height="709dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="36dp"
+            android:layout_height="728dp"
+            android:layout_weight="6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="643dp"
+            android:onClick="mostrarFechaPopup"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="397dp"
+                android:layout_height="17dp" />
+
+            <LinearLayout
+                android:layout_width="391dp"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/utxttitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:text="Antecentes del SAP"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#3F51B5"
+                    android:textSize="15sp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="331dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+
+                        <TextView
+                            android:id="@+id/vitext771"
+                            android:layout_width="270dp"
+                            android:layout_height="37dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#070707"
+                            android:rotationX="0"
+                            android:text="Por favor marque en una o mas opciones si tuvo algun antecedente"
+                            android:textColor="#070707"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/antfamiliarcheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="Herramienta  o y m "
+                            android:textSize="8sp" />
+
+
+                        <Space
+                            android:layout_width="18dp"
+                            android:layout_height="34dp"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_tipo_saneamiento"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:text="Tipo de Saneamiento"
+                            android:textSize="8sp" />
+
+                        <Space
+                            android:layout_width="18dp"
+                            android:layout_height="34dp"
+                            android:layout_weight="1" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="15dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1" />
+
+
+                        <CheckBox
+                            android:id="@+id/antmedicamentocheckBox"
+                            android:layout_width="154dp"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="@string/ant_medi"
+                            android:textSize="8sp" />
+
+
+                        <Space
+                            android:layout_width="18dp"
+                            android:layout_height="34dp"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/antneonatalescheckBox"
+                            android:layout_width="153dp"
+                            android:layout_height="match_parent"
+                            android:padding="16dp"
+                            android:text="@string/ant_neo"
+                            android:textSize="8sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="15dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1" />
+
+
+                        <CheckBox
+                            android:id="@+id/antepidemocheckBox"
+                            android:layout_width="154dp"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="@string/ant_epi"
+                            android:textSize="8sp" />
+
+
+                        <Space
+                            android:layout_width="18dp"
+                            android:layout_height="34dp"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/antinmucheckBox"
+                            android:layout_width="153dp"
+                            android:layout_height="match_parent"
+                            android:padding="16dp"
+                            android:text="@string/ant_inmu"
+                            android:textSize="8sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="15dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1" />
+
+
+                        <CheckBox
+                            android:id="@+id/antgeniocheckBox"
+                            android:layout_width="154dp"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="Poblacion beneficiaria  y numero de conexion"
+                            android:textSize="8sp" />
+
+                        <Space
+                            android:layout_width="18dp"
+                            android:layout_height="34dp"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/antlabrcheckBox"
+                            android:layout_width="153dp"
+                            android:layout_height="match_parent"
+                            android:padding="16dp"
+                            android:text="Estado de SAP"
+                            android:textSize="8sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:layout_weight="1" />
+
+
+                        <CheckBox
+                            android:id="@+id/antoperacheckBox"
+                            android:layout_width="151dp"
+                            android:layout_height="78dp"
+                            android:padding="16dp"
+                            android:text="Caudal en captacion"
+                            android:textSize="8sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="31dp"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/anthospcheckBox"
+                            android:layout_width="137dp"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="Volumen de Reservorio"
+                            android:textSize="8sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="15dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1" />
+
+
+                        <CheckBox
+                            android:id="@+id/antpatcheckBox"
+                            android:layout_width="154dp"
+                            android:layout_height="match_parent"
+                            android:padding="16dp"
+                            android:text="Antiguedad del SAP"
+                            android:textSize="8sp" />
+
+
+                        <Space
+                            android:layout_width="18dp"
+                            android:layout_height="34dp"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/antalergicocheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="16dp"
+                            android:text="Mejoras  realizadas al SAP"
+                            android:textSize="8sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="191dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textview_reporte"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/oval_verde"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Registrar"
+                    android:textColor="#E3D3D3" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textview_id"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/oval_background"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Ver reportes"
+                    android:textColor="#E3D3D3" />
+
+                <Space
+                    android:layout_width="18dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

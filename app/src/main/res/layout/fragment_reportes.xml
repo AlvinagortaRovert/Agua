@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.datos.Reportes">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/pastel24"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="638dp"
+            android:layout_marginBottom="58dp"
+            android:visibility="visible">
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/chart11"
+                android:layout_width="match_parent"
+                android:layout_height="417dp" />
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="186dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/bar_chart"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="113dp"
+            android:layout_marginEnd="227dp"
+            android:layout_marginBottom="73dp"
+            android:text="Selecione su control :"
+            android:textColor="#040404"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/bar_chart"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="167dp"
+            android:layout_marginEnd="227dp"
+            android:layout_marginBottom="20dp"
+            android:text="Selecione su semestre:"
+            android:textColor="#040404"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerreport"
+            android:layout_width="176dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/bar_chart"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="61dp"
+            android:textSize="11sp"
+            android:entries="@array/opciones_reportes" />
+
+        <Spinner
+            android:id="@+id/spinnerreport2"
+            android:layout_width="176dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/bar_chart"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="7dp"
+            android:entries="@array/opciones_reportes"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.datos.vigilancia_agua">
+
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="696dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="736dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="391dp"
+                android:layout_height="39dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/atexttitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monitoreo Agua"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#3F51B5"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="442dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+
+                <TextView
+                    android:id="@+id/addvigilancia"
+                    android:layout_width="201dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ovalrojo"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text=" + Agregar nuevo parámetro"
+                    android:textColor="#E3D3D3" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="135dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/vitext88"
+                    android:layout_width="298dp"
+                    android:layout_height="31dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#070707"
+                    android:rotationX="0"
+                    android:text=" Fecha de monitoreo"
+                    android:textColor="#070707"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vitextid"
+                    android:layout_width="358dp"
+                    android:layout_height="31dp"
+                    android:layout_weight="1"
+                    android:text=" 4810541"
+                    android:textColor="#9C27B0" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="18dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/vitex199"
+                    android:layout_width="73dp"
+                    android:layout_height="31dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#070707"
+                    android:rotationX="0"
+                    android:text="Seleccione su control"
+                    android:textColor="#070707"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="186dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBox0"
+                    android:layout_width="253dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Seleccione todas las viv./ver reportes"
+                    android:textColor="#0A7CD6"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtpresion"
+                    android:layout_width="85dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#1335F4"
+                    android:rotationX="-22"
+                    android:text="Normal"
+                    android:textColor="#0026F8"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="475dp"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="14dp"
+                            android:layout_height="42dp"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="23dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="viv1"
+                            android:textSize="12sp"
+                            android:textStyle="normal|bold" />
+
+                        <SeekBar
+                            android:id="@+id/stikviv1"
+                            android:layout_width="108dp"
+                            android:layout_height="31dp"
+                            android:layout_weight="2"
+                            android:backgroundTint="#673AB7"
+                            android:max="120"
+                            android:progress="50" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtondiastole"
+                            android:layout_width="20dp"
+                            android:layout_height="31dp"
+                            android:layout_weight="1"
+                            android:src="@android:drawable/ic_menu_edit" />
+
+                        <TextView
+                            android:id="@+id/txtv1"
+                            android:layout_width="68dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#2B0371"
+                            android:text="80  mmHg"
+                            android:textAlignment="center"
+                            android:textColor="#490BB8"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <Space
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="14dp"
+                            android:layout_height="42dp"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+                            android:layout_width="23dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="viv2"
+                            android:textSize="12sp"
+                            android:textStyle="normal|bold" />
+
+                        <SeekBar
+                            android:id="@+id/stikviv2"
+                            android:layout_width="108dp"
+                            android:layout_height="31dp"
+                            android:layout_weight="2"
+                            android:backgroundTint="#673AB7"
+                            android:max="180"
+                            android:progress="120" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonsistole"
+                            android:layout_width="20dp"
+                            android:layout_height="31dp"
+                            android:layout_weight="1"
+                            android:src="@android:drawable/ic_menu_edit" />
+
+                        <TextView
+                            android:id="@+id/txtsistole"
+                            android:layout_width="68dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#2B0371"
+                            android:text="120  mmHg"
+                            android:textAlignment="center"
+                            android:textColor="#490BB8"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="14dp"
+                            android:layout_height="42dp"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            android:layout_width="23dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="viv3"
+                            android:textSize="12sp"
+                            android:textStyle="normal|bold" />
+
+                        <SeekBar
+                            android:id="@+id/stikviv3"
+                            android:layout_width="108dp"
+                            android:layout_height="31dp"
+                            android:layout_weight="2"
+                            android:backgroundTint="#673AB7"
+                            android:max="180"
+                            android:progress="120"
+                            android:thumb="@drawable/btnazul" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonsistole3"
+                            android:layout_width="20dp"
+                            android:layout_height="31dp"
+                            android:layout_weight="1"
+                            android:src="@android:drawable/ic_menu_edit" />
+
+                        <TextView
+                            android:id="@+id/txtv3"
+                            android:layout_width="68dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#2B0371"
+                            android:text="120  mmHg"
+                            android:textAlignment="center"
+                            android:textColor="#490BB8"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="14dp"
+                            android:layout_height="42dp"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox4"
+                            android:layout_width="23dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="viv4"
+                            android:textSize="12sp"
+                            android:textStyle="normal|bold" />
+
+                        <SeekBar
+                            android:id="@+id/stikviv4"
+                            android:layout_width="108dp"
+                            android:layout_height="31dp"
+                            android:layout_weight="2"
+                            android:backgroundTint="#673AB7"
+                            android:max="180"
+                            android:progress="120" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonsistole4"
+                            android:layout_width="20dp"
+                            android:layout_height="31dp"
+                            android:layout_weight="1"
+                            android:src="@android:drawable/ic_menu_edit" />
+
+                        <TextView
+                            android:id="@+id/txtsistole4"
+                            android:layout_width="68dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#2B0371"
+                            android:text="120  mmHg"
+                            android:textAlignment="center"
+                            android:textColor="#490BB8"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="14dp"
+                            android:layout_height="42dp"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="23dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="viv5"
+                            android:textSize="12sp"
+                            android:textStyle="normal|bold" />
+
+                        <SeekBar
+                            android:id="@+id/stikviv5"
+                            android:layout_width="108dp"
+                            android:layout_height="31dp"
+                            android:layout_weight="2"
+                            android:backgroundTint="#673AB7"
+                            android:max="180"
+                            android:progress="120" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonsistole5"
+                            android:layout_width="20dp"
+                            android:layout_height="31dp"
+                            android:layout_weight="1"
+                            android:src="@android:drawable/ic_menu_edit" />
+
+                        <TextView
+                            android:id="@+id/txtsistole5"
+                            android:layout_width="68dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#2B0371"
+                            android:text="120  mmHg"
+                            android:textAlignment="center"
+                            android:textColor="#490BB8"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textview_recuperar"
+                    android:layout_width="111dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/oval_background"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Guardar"
+                    android:textColor="#E3D3D3" />
+
+                <Space
+                    android:layout_width="22dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ver por fecha"
+                    android:textColor="#070707"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imagefecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_menu_my_calendar" />
+
+                <Space
+                    android:layout_width="22dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="428dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/atvitexmolestias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#070707"
+                    android:text="Tipo de gráfico"
+                    android:textColor="#070707"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+
+                <RadioGroup
+                    android:id="@+id/opciones_sexo"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_masculino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="36dp"
+                        android:checked="true"
+                        android:text="Barras"
+                        android:textSize="10sp"
+                        android:visibility="visible" />
+
+                    <RadioButton
+                        android:id="@+id/radio_femenino"
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Lineal"
+                        android:textSize="10sp"
+                        android:visibility="visible"
+                        tools:visibility="visible" />
+                </RadioGroup>
+
+
+                <Space
+                    android:layout_width="63dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="182dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="433dp"
+                        android:layout_height="250dp">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/chart"
+                            android:layout_width="900dp"
+                            android:layout_height="135dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="186dp" />
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/bar_chart"
+                            android:layout_width="900dp"
+                            android:layout_height="195dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="186dp" />
+
+                    </FrameLayout>
+
+                    <!-- Otro FrameLayout u otros elementos para extender el contenido -->
+                    <FrameLayout
+                        android:layout_width="433dp"
+                        android:layout_height="250dp">
+                        <!-- Contenido adicional -->
+                    </FrameLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/btnAtras"
+                    android:layout_width="111dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/oval_background"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Ant."
+                    android:textColor="#E3D3D3" />
+
+                <Space
+                    android:layout_width="22dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/btnAdelante"
+                    android:layout_width="111dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/oval_background"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Sig."
+                    android:textColor="#E3D3D3" />
+
+                <Space
+                    android:layout_width="22dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
